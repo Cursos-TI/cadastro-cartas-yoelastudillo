@@ -1,17 +1,32 @@
 #include <stdio.h>
 
 int main (){
-	char estado1, estado2;
-	char codigo1[3], codigo2[3];
-	char cidade1[50], cidade2[50];
-	int populacao1, populacao2;
-	float area1, area2;
-	float pib1, pib2;
-	int pontos1, pontos2;
-	float densidad1 = area1 / populacao1, densidad2 = area2 / populacao2;
-	float pibcap1 = pib1/populacao1, pibcap2 = pib2 / populacao2;
+//declaracion carta 1
+	char estado1[3] = "";
+	char codigo1[3] ="AA0";
+	char cidade1[50] ="Fortaleza";
+	unsigned long int populacao1=2000000;
+	float area1=5000000;
+	float pib1=300;
+	int pontos1=200;
+	float densidad1 = area1 / populacao1;
+	float pibcap1 = pib1/populacao1;
+	float superpoder1=populacao1+area1+pib1+pontos1+densidad1+pibcap1;
 
-	printf("Carta 1:");
+//declaracion carta2
+	char estado2[3] ="";
+	char codigo2[3]="AA2";
+	char cidade2[50]="Eusebio";
+	unsigned long int populacao2=150000;
+	float area2=300000;
+	float pib2=100;
+	int pontos2=10;
+	float densidad2 = area2 / populacao2;
+	float pibcap2 = pib2 / populacao2;
+	float superpoder2=populacao2+area2+pib2+pontos2+densidad2+pibcap2;
+
+//muestra informacao carta1
+	printf("Carta 1:\n");
 	printf("Estado: %s\n",estado1);
 	printf("Codigo: %s\n",codigo1);
 	printf("Cidade: %s\n",cidade1);
@@ -22,7 +37,8 @@ int main (){
 	printf("Densidade: %f\n",densidad1);
 	printf("PIB x cap: %f\n",pibcap1);
 
-	printf("Carta 2:");
+//mostra informacao carta2
+	printf("Carta 2:\n");
 	printf("Estado: %s\n",estado2);
 	printf("Codigo: %s\n",codigo2);
 	printf("Cidade: %s\n",cidade2);
@@ -33,5 +49,5 @@ int main (){
 	printf("Densidade: %f\n",densidad2);
 	printf("PIB x cap: %f\n",pibcap2);
 
-
+	return 0;
 }
