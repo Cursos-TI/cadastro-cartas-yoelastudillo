@@ -49,5 +49,15 @@ int main (){
 	printf("Densidade: %f\n",densidad2);
 	printf("PIB x cap: %f\n",pibcap2);
 
+
+//desafio comparacion
+	printf("Desafio comparacao: \n");
+	printf("POPULACAO: %d\n", populacao1 > populacao2);
+	printf("AREA:%d\n", area1 > area2);
+	printf("PIB:%d\n", pib1 > pib2);
+	printf("PONTOS:%d\n", pontos1 > pontos2);
+	printf("DENSIDAD:%d\n", densidad1 > densidad2);
+	printf("PIB X CAP:%d\n", pibcap1>pibcap2);
+	printf("SUPER PODER:%d\n", superpoder1>superpoder2);
 	return 0;
 }
