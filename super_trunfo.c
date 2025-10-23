@@ -25,6 +25,7 @@ int main (){
 	float pibcap2 = pib2 / populacao2;
 	float superpoder2=populacao2+area2+pib2+pontos2+densidad2+pibcap2;
 
+
 //muestra informacao carta1
 	printf("Carta 1:\n");
 	printf("Estado: %s\n",estado1);
@@ -51,7 +52,8 @@ int main (){
 
 
 //desafio comparacion
-	printf("Desafio comparacao: \n");
+
+
 	printf("POPULACAO: %d\n", populacao1 > populacao2);
 	printf("AREA:%d\n", area1 > area2);
 	printf("PIB:%d\n", pib1 > pib2);
@@ -59,5 +61,34 @@ int main (){
 	printf("DENSIDAD:%d\n", densidad1 > densidad2);
 	printf("PIB X CAP:%d\n", pibcap1>pibcap2);
 	printf("SUPER PODER:%d\n", superpoder1>superpoder2);
+
+
+	int habilidad;
+	printf("ingrese el numero de la habilidad elegida: \n");
+	scanf("%d", &habilidad);
+	switch (habilidad)
+	{
+	case 1:
+		printf("la opcion elegida es 1");
+		break;
+	case 2:
+		printf("la opcion elegida es 2");
+		break;
+	case 3:
+		printf("la opcion elegida es 3");
+		break;
+	case 4:
+		printf("la opcion elegida es 4");
+		break;
+	default:
+	break;
+ }
+
+char *test1 = "Calor";
+printf("%c asterisco\n", *test1);
+
+char test2 = "Calor";
+printf("%s sin asterisco \n", test2);
+
 	return 0;
 }
